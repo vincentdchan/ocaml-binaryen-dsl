@@ -80,6 +80,14 @@ Before intalling, make sure you have install [Binaryen](https://github.com/WebAs
 brew install binaryen
 ```
 
+## Install from source
+
+Clone the repo and type:
+
+``` bash
+opam install .
+```
+
 ## Install from opam
 
 ```bash
@@ -113,3 +121,12 @@ When you open the `Dsl`, all the WAT sematics will be exposed.
 
 If you want to express `i32.load`, then write `I32.load`.
 Most of them are very similar.
+
+## Emit Code
+
+You can emit binary code to a file or just emit WAT.
+
+```OCaml
+val emit_binary: module_ -> string -> unit
+val emit_text: module_ -> string
+```
