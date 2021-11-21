@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "binaryen_dsl"
-version: "0.3"
+version: "0.4"
 synopsis: "Writing Webassembly text format in DSL"
 description: """
 This library helps you to write Webassembly text format(WAT) in OCaml source code with DSL. It helps you to write a code generator for your language to WASM.
@@ -13,7 +13,7 @@ license: "MIT"
 homepage: "https://github.com/vincentdchan/ocaml-binaryen-dsl"
 bug-reports: "https://github.com/vincentdchan/ocaml-binaryen-dsl/issues"
 dev-repo: "git+https://github.com/vincentdchan/ocaml-binaryen-dsl.git"
-depends: [ "ocaml" "dune" ]
+depends: [ "ocaml" "dune" "ctypes" ]
 build: [
   ["dune" "build" "-j" jobs]
 ]
