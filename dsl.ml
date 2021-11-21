@@ -28,6 +28,8 @@ let emit_binary m path =
   Bound.dump_bytes_to_path bytes raw_size path;
   Bound.clean_binary_result result
 
+let emit_text m = Bound.emit_text m
+
 module type BinaryenModule = sig
 
   val ptr_ty: Bound.binary_type
