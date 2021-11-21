@@ -83,7 +83,7 @@ brew install binaryen
 ## Install from opam
 
 ```bash
-opam install ocaml_binaryen_dsl
+opam install binaryen_dsl
 ```
 
 # Usage
