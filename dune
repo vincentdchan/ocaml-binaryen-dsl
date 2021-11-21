@@ -1,5 +1,6 @@
 (library
  (name binaryen_dsl)
+ (public_name binaryen_dsl)
  (libraries bindings core_kernel ctypes)
  (foreign_stubs
   (language c)
