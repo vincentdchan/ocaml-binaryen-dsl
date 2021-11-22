@@ -1,13 +1,12 @@
 (library
  (name binaryen_dsl)
  (public_name binaryen_dsl)
- (libraries bindings core_kernel ctypes)
+ (libraries bindings core_kernel ctypes libbinaryen.c)
  (foreign_stubs
   (language c)
   (names b)
-  (flags -Wno-incompatible-pointer-types))
- (c_library_flags (-lbinaryen))
- (flags :standard -cclib -lbinaryen))
+  (flags :standard -Wno-incompatible-pointer-types))
+ (c_library_flags :standard -lstdc++ -lpthread))
 
 (rule
  (targets b.ml)
