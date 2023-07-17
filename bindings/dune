@@ -1,5 +1,5 @@
 (library
  (name bindings)
  (public_name binaryen_dsl.bindings)
- (libraries core ctypes)
+ (libraries core ctypes.stubs)
 )
